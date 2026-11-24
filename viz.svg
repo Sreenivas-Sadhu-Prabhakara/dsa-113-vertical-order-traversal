@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="730" viewBox="0 0 760 730" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="728.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Vertical Order — group nodes by column</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Slice the tree into COLUMNS: root at 0, left −1, right +1. The 20 sits at +1, its</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">children 15 at 0 and 7 at +2.</text>
+<line x1="380.0" y1="150.0" x2="202.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="380.0" y1="150.0" x2="558.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="558.0" y1="212.0" x2="469.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="558.0" y1="212.0" x2="647.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<circle cx="380.0" cy="134.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="139.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">3</text>
+<circle cx="202.0" cy="196.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="202.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">9</text>
+<circle cx="558.0" cy="196.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="558.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">20</text>
+<circle cx="469.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="469.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">15</text>
+<circle cx="647.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="647.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">7</text>
+<line x1="24.0" y1="298.0" x2="736.0" y2="298.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="318.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="322.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="323.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">BFS carrying (node, column): column −1 gets [9]; column 0 gets [3, 15] — root first</text>
+<text x="56.0" y="342.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">because BFS visits shallower nodes first; +1 gets [20]; +2 gets [7].</text>
+<text x="72.0" y="377.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">columns</text>
+<rect x="84.0" y="358.0" width="126.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="147.0" y="377.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">col -1 → [9]</text>
+<rect x="220.0" y="358.0" width="153.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="296.5" y="377.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">col 0 → [3, 15]</text>
+<rect x="383.0" y="358.0" width="135.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="450.5" y="377.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">col +1 → [20]</text>
+<rect x="528.0" y="358.0" width="126.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="591.0" y="377.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">col +2 → [7]</text>
+<line x1="24.0" y1="402.0" x2="736.0" y2="402.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="422.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="426.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="427.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Read columns left to right: [[9],[3,15],[20],[7]]. BFS gives the within-column</text>
+<text x="56.0" y="446.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">top-to-bottom order for free; tracking min/max column avoids sorting keys.</text>
+<text x="84.0" y="495.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end">-1</text>
+<rect x="94.0" y="470.0" width="44.0" height="38.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="116.0" y="494.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">9</text>
+<text x="116.0" y="466.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">0</text>
+<text x="84.0" y="555.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end">0</text>
+<rect x="94.0" y="530.0" width="44.0" height="38.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="116.0" y="554.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<text x="116.0" y="526.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">0</text>
+<rect x="140.0" y="530.0" width="44.0" height="38.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="162.0" y="554.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">15</text>
+<text x="162.0" y="526.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">1</text>
+<text x="84.0" y="615.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end">+1</text>
+<rect x="94.0" y="590.0" width="44.0" height="38.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="116.0" y="614.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">20</text>
+<text x="116.0" y="586.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">0</text>
+<text x="84.0" y="675.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end">+2</text>
+<rect x="94.0" y="650.0" width="44.0" height="38.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="116.0" y="674.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">7</text>
+<text x="116.0" y="646.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">0</text>
+<text x="380.0" y="712.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
